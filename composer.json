@@ -1,6 +1,6 @@
 {
-    "name": "fangx/resource",
-    "description": "A api resource component for hyperf.",
+    "name": "swoolecan/hyperf-resource",
+    "description": "A api resource component for hyperf.(based https://github.com/fangx-packages/hyperf-resource)",
     "type": "library",
     "license": "MIT",
     "keywords": [
