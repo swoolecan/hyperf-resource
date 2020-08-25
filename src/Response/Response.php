@@ -108,7 +108,8 @@ class Response
             $data = [($this->wrapper() ?? 'data') => $data];
         }
 
-        return array_merge_recursive($data, $with, $additional);
+        //return array_merge_recursive($data, $with, $additional);
+        return ['code' => 200, 'message' => 'OK', 'datas' => array_merge_recursive($data, $with, $additional)];
     }
 
     /**
