@@ -19,7 +19,6 @@ use Hyperf\Utils\Str;
 use Symfony\Component\Console\Input\InputOption;
 
 /**
- * @Command
  */
 class GenResourceCommand extends GeneratorCommand
 {
