@@ -25,7 +25,7 @@ class ConfigProvider
             'listeners' => [
             ],
             'commands' => [
-                GenResourceCommand::class,
+                //GenResourceCommand::class,
             ],
         ];
     }
