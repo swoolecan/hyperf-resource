@@ -47,6 +47,12 @@ class Response
         return $this->response()
             ->withStatus($this->calculateStatus())
             ->withAddedHeader('content-type', 'application/json; charset=utf-8')
+
+            //->withHeader('Access-Control-Allow-Origin', '*')
+            //->withHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS,PATCH')
+            //->withHeader('Access-Control-Allow-Credentials', 'true')
+            //->withHeader('Access-Control-Allow-Headers', 'DNT,Keep-Alive,User-Agent,Cache-Control,Content-Type,Authorization,X-Token')
+
             ->withBody(new SwooleStream(Json::encode($this->wrap(
                 $this->resource->resolve(),
                 $this->resource->with(),
